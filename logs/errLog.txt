@@ -1,0 +1,18 @@
+20230310	19:35:07	907f3f83-912d-48b1-8b0a-b9c48449de8d	Error: Not allowed by CORS
+20230313	02:10:28	50206cbc-960d-46a8-aaf0-550a0bb34edd	ReferenceError: Process is not defined
+20230313	02:10:47	69cf2668-ccf9-4b54-8e84-b7df3d64e27d	ReferenceError: Process is not defined
+20230318	01:30:17	403e2245-2eb4-4087-ad5b-3c79d323caf0	Error: Cannot set headers after they are sent to the client
+20230412	03:31:36	7a888dcd-a06e-4da6-8f0c-97386a6eff0c	MulterError: Unexpected field
+20230412	03:33:25	d2c927a7-9281-42db-8c55-46e682403210	MulterError: Unexpected field
+20230412	13:36:19	2b86db05-40d2-4c38-8b73-885d2ea63754	MulterError: Unexpected field
+20230412	13:36:29	e4221755-b957-4754-bc5a-104639043eaa	MulterError: Unexpected field
+20230412	13:37:18	bb1c3a11-9e2d-4eb1-be37-63b0c939696a	Error: ENOENT: no such file or directory, open 'C:\Users\praty\OneDrive\Desktop\project\Backend\public\files\admin-myFile-1681286838107.pdf'
+20230412	13:40:09	16fafb92-c4a3-4839-b2d6-6d0352413781	Error: ENOENT: no such file or directory, open 'C:\Users\praty\OneDrive\Desktop\project\Backend\public\files\admin-myFile-1681287009619.pdf'
+20230412	13:40:14	d9206c6e-a748-459e-aaa8-d80f6d000dda	MulterError: Unexpected field
+20230414	01:27:55	b35723a9-b28b-4653-b48e-d2034d520eee	MulterError: Unexpected field
+20230414	02:00:56	ea72c8c5-e6c0-43bd-a0e3-85b26fab6602	Error: ENOENT: no such file or directory, open 'C:\Users\praty\OneDrive\Desktop\project\Backend\uploads\eace7cc5-9e0c-486a-b5bb-59d394f3ae33-Declaration edited.pdf'
+20230414	02:01:25	ade293fd-8727-4181-97ef-a046dd28fd29	Error: ENOENT: no such file or directory, open 'C:\Users\praty\OneDrive\Desktop\project\Backend\uploads\c22ed4c9-17b7-4a90-9478-6a7f5c7e4af1-Declaration edited.pdf'
+20230414	13:44:39	01b98c73-087e-4442-9d1b-32edda07242f	Error: File is not of correct type
+20230414	15:15:51	554ed987-8232-40e4-98ad-3a5c8b853efe	MulterError: File too large
+20230414	15:17:41	72d7fe3a-1a25-4668-97b8-201a2eadb2ed	MulterError: File too large
+20230414	15:17:55	04133ce1-5f9b-40f6-a11b-f819d89a0460	MulterError: File too large
