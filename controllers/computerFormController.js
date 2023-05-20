@@ -5,7 +5,7 @@ const handleFormData = async (req, res) => {
         const result = new ComputerSchema(req.body);
         await result.save();
         res.status(201).json({ 'success': `Data Saved Successfully` });
-        console.log(result);
+        // console.log(result);
     } catch (err) {
         res.status(500).json({ 'message': err.message });
     }

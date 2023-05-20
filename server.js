@@ -76,7 +76,6 @@ const docUpload = multer({ fileStorage, docFileFilter });
 app.post('/docupload', docUpload.single("file"), async (req, res) => {
     const file = req.file;
     const result = await s3Uploadv3(file);
-    console.log(file);
     res.json({ status: "success", result });
 });
 
@@ -96,7 +95,6 @@ const signUpload = multer({ signStorage, signFileFilter });
 app.post('/signupload', signUpload.single("file"), async (req, res) => {
     const file = req.file;
     const result = await s3Uploadv3(file);
-    console.log(file);
     res.json({ status: "success", result });
 });
 
@@ -116,49 +114,6 @@ app.use((error, req, res, next) => {
 })
 
 app.use(verifyJWT);
-
-// app.use('/employees', require('./routes/api/employees'));
-
-/*app.use('/subdir', require('./routes/subdir'));
-
-
-Route handlers
-app.get('/hello(.html)?', (req, res, next) => {
-    console.log('attempted to load hello.html');
-    next()
-}, (req, res) => {
-    res.send('Hello World!');
-});
-
-
-// chaining route handlers
-const one = (req, res, next) => {
-    console.log('one');
-    next();
-}
-
-const two = (req, res, next) => {
-    console.log('two');
-    next();
-}
-
-const three = (req, res) => {
-    console.log('three');
-    res.send('Finished!');
-}
-
-app.get('/chain(.html)?', [one, two, three]);*/
-
-// app.all('*', (req, res) => {
-//     res.status(404);
-//     if (req.accepts('html')) {
-//         res.sendFile(path.join(__dirname, 'views', '404.html'));
-//     } else if (req.accepts('json')) {
-//         res.json({ "error": "404 Not Found" });
-//     } else {
-//         res.type('txt').send("404 Not Found");
-//     }
-// });
 
 app.use(errorHandler);
 

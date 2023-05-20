@@ -32,7 +32,7 @@ const handleLogin = async (req, res) => {
         //Saving refersh token with current user
         foundUser.refreshToken = refreshToken;
         const result = await foundUser.save();
-        console.log(result);
+        // console.log(result);
 
         res.cookie('jwt', refreshToken, { httpOnly: true, secure: true, sameSite: 'None', maxAge: 24 * 60 * 60 * 1000 }); //
         res.json({ roles, accessToken });
