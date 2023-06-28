@@ -41,10 +41,10 @@ app.use(cookieParser());
 //serve static files
 // app.use(express.static(path.join(__dirname, '/public')));
 
-app.use(express.static(path.join(__dirname, '/client/build')));
-app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, '/client/build/index.html'));
-})
+// app.use(express.static(path.join(__dirname, '/client/build')));
+// app.get('*', function (req, res) {
+//     res.sendFile(path.join(__dirname, '/client/build/index.html'));
+// })
 
 // app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
@@ -53,6 +53,7 @@ app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));
+// app.use('/sendpasswordlink', require('./routes/forgotPassword'));
 app.use('/literaryData', require('./routes/literaryData'));
 app.use('/artisticData', require('./routes/artisticData'));
 app.use('/musicalData', require('./routes/musicalData'));
